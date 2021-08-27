@@ -20,3 +20,29 @@ body {
     color: $seondary-color;
     font-family: $body-font;
 }
+
+
+/* Control Directives
+========================= */
+
+/* Sass lets you use @if, @else, @for, @while, and @each to control the
+compilation to your code to CSS. */
+
+/* @if/@else blocks behave exactly as you might expect */
+
+$debug: true !default;
+
+@mixin debugmode {
+    @if $debug {
+        @debug "Debug mode enabled";
+
+        display: inline-block;
+    }
+    @else {
+        display: none;
+    }
+}
+
+.info {
+    @include debugmode;
+}
