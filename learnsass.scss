@@ -5,3 +5,18 @@
 /* Variables
 ============================= */
 
+/* You can store a CSS value (such as a color) in a variable.
+Use the '$' symbol to create a variable. */
+
+$primary-color: #A3A4FF;
+$seondary-color: #51527F;
+$body-font: 'Roboto', sans-serife;
+
+/* You can use the variables throughout your stylesheet.
+Now if you want to change a color, you only have to make the change once. */
+
+body {
+    background-color: $primary-color;
+    color: $seondary-color;
+    font-family: $body-font;
+}
